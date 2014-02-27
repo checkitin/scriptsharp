@@ -87,7 +87,7 @@ namespace jQueryApi {
         }
 
         /// <summary>
-        /// Determine the current state of a Deferred object.
+        /// Determines whether the deferred object has been resolved.
         /// </summary>
         /// <returns>true if it has been resolved; false otherwise.</returns>
         public bool IsResolved() {
