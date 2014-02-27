@@ -95,7 +95,7 @@ namespace jQueryApi {
         }
 
         /// <summary>
-        /// Determines whether the deferred object has been rejected.
+        /// Determine the current state of a Deferred object.
         /// </summary>
         /// <returns>
         /// "pending": The Deferred object is not yet in a completed state (neither "rejected" nor "resolved").
