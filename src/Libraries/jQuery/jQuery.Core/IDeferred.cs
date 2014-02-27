@@ -76,6 +76,16 @@ namespace jQueryApi {
         bool IsResolved();
 
         /// <summary>
+        /// Determines whether the deferred object has been rejected.
+        /// </summary>
+        /// <returns>
+        /// "pending": The Deferred object is not yet in a completed state (neither "rejected" nor "resolved").
+        ///"resolved": The Deferred object is in the resolved state, meaning that either deferred.resolve() or deferred.resolveWith() has been called for the object and the doneCallbacks have been called (or are in the process of being called).
+        ///"rejected": The Deferred object is in the rejected state, meaning that either deferred.reject() or deferred.rejectWith() has been called for the object and the failCallbacks have been called (or are in the process of being called).
+        /// </returns>
+        string State();
+
+        /// <summary>
         /// Filters or chains deffered objects.
         /// </summary>
         /// <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>

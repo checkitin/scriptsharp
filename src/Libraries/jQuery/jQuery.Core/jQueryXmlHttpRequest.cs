@@ -300,7 +300,13 @@ namespace jQueryApi {
             return false;
         }
 
-        IDeferred IDeferred.Pipe(jQueryDeferredFilter successFilter) {
+        public string State()
+        {
+            return null;
+        }
+
+        IDeferred IDeferred.Pipe(jQueryDeferredFilter successFilter)
+        {
             return null;
         }
 
